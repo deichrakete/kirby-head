@@ -1,0 +1,70 @@
+label:
+  de: Head
+  en: Head
+icon: share
+
+fields:
+  head_author:
+    label:
+      de: Autor
+      en: Author
+    type: text
+    width: 1/2
+
+  head_google_site_verification:
+    label:
+      de: Google-Bestätigungstoken
+      en: Google confirmation token
+    type: text
+    width: 1/2
+
+  head_keywords:
+    label:
+      de: Stichwörter
+      en: Keywords
+    width: 1/2
+    type: tags
+
+  line1:
+    type: line
+
+  og_image:
+    label:
+      de: Open Graph-Bild
+      en: Open Graph image
+    type: files
+    multiple: false
+    query: site.images
+    width: 1/2
+
+  line2:
+    type: line
+
+  twitter_site:
+    label:
+      de: Twitter-Nutzername
+      en: Twitter username
+    type: text
+    placeholder:
+      de: @ihr_nutzername
+      en: @your_username
+    width: 1/2
+
+  twitter_image:
+    label:
+      de: Twitter Card-Bild
+      en: Twitter card image
+    type: files
+    multiple: false
+    query: site.images
+    width: 1/2
+
+  line3:
+    type: line
+
+  favicon_info:
+    label:
+      de: Hinweiß
+      en: Info
+    type: info
+    text: TODO

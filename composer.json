@@ -1,0 +1,21 @@
+{
+  "name": "foerdeliebe/kirby-head",
+  "description": "",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Stephan Plöhn",
+      "email": "stephan@foerdliebe.com",
+      "homepage": "https://foerdeliebe.com"
+    }
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.2"
+  },
+  "extra": {
+    "installer-name": ""
+  }
+}
