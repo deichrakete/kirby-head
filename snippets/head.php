@@ -52,8 +52,10 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 <meta property="og:title" content="<?php e($page->head_og_title()->isNotEmpty(), $page->head_og_title(), $page->title()) ?>">
-<?php if ($head_og_image = $page->head_og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $head_og_image->url() ?>">
+<?php if ($page->head_og_image()->toFile()): ?>
+    <meta property="og:image" content="<?= $page->head_og_image()->toFile()->url() ?>">
+<?php elseif ($site->head_og_image()->toFile()): ?>
+    <meta property="og:image" content="<?= $site->head_og_image()->toFile()->url() ?>">
 <?php endif ?>
 
 <!-- Twitter Card -->
@@ -75,8 +77,10 @@ use Kirby\Filesystem\F;
     name="twitter:title"
     content="<?php e($page->head_twitter_title()->isNotEmpty(), $page->head_twitter_title(), $page->title()) ?>"
 >
-<?php if ($twitter_image = $page->head_twitter_image()->toFile()): ?>
-    <meta property="twitter:image" content="<?= $twitter_image->url() ?>">
+<?php if ($page->head_twitter_image()->toFile()): ?>
+    <meta property="twitter:image" content="<?= $page->head_twitter_image()->toFile()->url() ?>">
+<?php elseif ($site->head_twitter_image()->toFile()): ?>
+    <meta property="twitter:image" content="<?= $site->head_twitter_image()->toFile()->url() ?>">
 <?php endif ?>
 
 <!-- Favicon -->
