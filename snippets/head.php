@@ -41,41 +41,41 @@ use Kirby\Filesystem\F;
 <?php endif ?>
 
 <!-- Open Graph -->
-<?php if ($site->og_description()->isNotEmpty() || $page->og_description()->isNotEmpty()) : ?>
+<?php if ($site->head_og_description()->isNotEmpty() || $page->head_og_description()->isNotEmpty()) : ?>
     <meta
         property="og:description"
         content="<?php e(
-            $page->og_description()->isNotEmpty(),
-            $page->og_description(),
+            $page->head_og_description()->isNotEmpty(),
+            $page->head_og_description(),
             $site->head_description()
         ) ?>"
     >
 <?php endif ?>
-<meta property="og:title" content="<?php e($page->og_title()->isNotEmpty(), $page->og_title(), $page->title()) ?>">
-<?php if ($og_image = $page->og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $og_image->url() ?>">
+<meta property="og:title" content="<?php e($page->head_og_title()->isNotEmpty(), $page->head_og_title(), $page->title()) ?>">
+<?php if ($head_og_image = $page->head_og_image()->toFile()): ?>
+    <meta property="og:image" content="<?= $head_og_image->url() ?>">
 <?php endif ?>
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<?php if ($site->twitter_site()->isNotEmpty()): ?>
-    <meta name="twitter:site" content="<?= $site->twitter_site() ?>">
+<?php if ($site->head_twitter_site()->isNotEmpty()): ?>
+    <meta name="twitter:site" content="<?= $site->head_twitter_site() ?>">
 <?php endif ?>
-<?php if ($site->head_description()->isNotEmpty() || $page->twitter_description()->isNotEmpty()) : ?>
+<?php if ($site->head_head_description()->isNotEmpty() || $page->head_twitter_description()->isNotEmpty()) : ?>
     <meta
         name="twitter:description"
         content="<?php e(
-            $page->twitter_description()->isNotEmpty(),
-            $page->twitter_description(),
+            $page->head_twitter_description()->isNotEmpty(),
+            $page->head_twitter_description(),
             $site->head_description()
         ) ?>"
     >
 <?php endif ?>
 <meta
     name="twitter:title"
-    content="<?php e($page->twitter_title()->isNotEmpty(), $page->twitter_title(), $page->title()) ?>"
+    content="<?php e($page->head_twitter_title()->isNotEmpty(), $page->head_twitter_title(), $page->title()) ?>"
 >
-<?php if ($twitter_image = $page->twitter_image()->toFile()): ?>
+<?php if ($twitter_image = $page->head_twitter_image()->toFile()): ?>
     <meta property="twitter:image" content="<?= $twitter_image->url() ?>">
 <?php endif ?>
 
@@ -107,10 +107,10 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
-<?php if ($site->favicon_msapplication_tile_color()->isNotEmpty()) : ?>
-    <meta name="msapplication-TileColor" content="<?= $site->favicon_msapplication_tilecolor() ?>>">
+<?php if ($site->head_favicon_msapplication_tile_color()->isNotEmpty()) : ?>
+    <meta name="msapplication-TileColor" content="<?= $site->head_favicon_msapplication_tilecolor() ?>>">
 <?php endif ?>
 
-<?php if ($site->favicon_theme_color()->isNotEmpty()) : ?>
-    <meta name="theme-color" content="<?= $site->favicon_theme_color() ?>">
+<?php if ($site->head_favicon_theme_color()->isNotEmpty()) : ?>
+    <meta name="theme-color" content="<?= $site->head_favicon_theme_color() ?>">
 <?php endif ?>

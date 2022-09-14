@@ -1,7 +1,4 @@
-label:
-  de: Head
-  en: Head
-icon: share
+label: Seo & Social Media
 
 fields:
   head_author:
@@ -49,7 +46,7 @@ fields:
   line1:
     type: line
 
-  og_description:
+  head_og_description:
     label:
       de: Open Graph-Beschreibung
       en: Open Graph description
@@ -60,7 +57,7 @@ fields:
       de: Kurze und ansprechende Beschreibung des Inhalts dieser Seite
       en: Short and attractive description of the content of this page
 
-  og_title:
+  head_og_title:
     label:
       de: Open Graph-Titel
       en: Open Graph title
@@ -70,7 +67,7 @@ fields:
       de: Aussagekräftiger Titel
       en: Meaningful title
 
-  og_image:
+  head_og_image:
     label:
       de: Open Graph-Bild
       en: Open Graph image
@@ -82,16 +79,16 @@ fields:
   line2:
     type: line
 
-  twitter_site:
+  head_twitter_site:
     label:
       de: Twitter-Nutzername
       en: Twitter username
     type: text
     placeholder:
-      de: @ihr_nutzername
-      en: @your_username
+      de: '@ihr_nutzername'
+      en: '@your_username'
 
-  twitter_description:
+  head_twitter_description:
     label:
       de: Twitter Card-Beschreibung
       en: Twitter card description
@@ -102,7 +99,7 @@ fields:
       de: Kurze und ansprechende Beschreibung des Inhalts dieser Seite
       en: Short and attractive description of the content of this page
 
-  twitter_title:
+  head_twitter_title:
     label:
       de: Twitter Card-Titel
       en: Twitter card title
@@ -112,7 +109,7 @@ fields:
       de: Aussagekräftiger Titel
       en: Meaningful title
 
-  twitter_image:
+  head_twitter_image:
     label:
       de: Twitter Card-Bild
       en: Twitter card image

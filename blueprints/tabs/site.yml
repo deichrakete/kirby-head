@@ -1,7 +1,4 @@
-label:
-  de: Head
-  en: Head
-icon: share
+label: Seo & Social Media
 
 fields:
   head_author:
@@ -28,7 +25,7 @@ fields:
   line1:
     type: line
 
-  og_image:
+  head_og_image:
     label:
       de: Open Graph-Bild
       en: Open Graph image
@@ -40,17 +37,17 @@ fields:
   line2:
     type: line
 
-  twitter_site:
+  head_twitter_site:
     label:
       de: Twitter-Nutzername
       en: Twitter username
     type: text
     placeholder:
-      de: @ihr_nutzername
-      en: @your_username
+      de: '@ihr_nutzername'
+      en: '@your_username'
     width: 1/2
 
-  twitter_image:
+  head_twitter_image:
     label:
       de: Twitter Card-Bild
       en: Twitter card image
