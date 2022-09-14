@@ -35,13 +35,13 @@ fields:
 
   head_robots:
     label:
-      de: Anweisungen für Webcrawler
-      en: Instructions for web crawlers
+      de: Suchmaschinen
+      en: Search Engines
     type: toggle
     width: 1/2
     text:
-      - follow, index
-      - nofollow, noindex
+      de: Indexierung deaktivieren?
+      en: Disable indexing?
 
   line1:
     type: line
