@@ -72,6 +72,7 @@ fields:
       de: Open Graph-Bild
       en: Open Graph image
     type: files
+    layout: cards
     multiple: false
     query: site.images
     width: 1/2
@@ -114,6 +115,7 @@ fields:
       de: Twitter Card-Bild
       en: Twitter card image
     type: files
+    layout: cards
     multiple: false
     query: site.images
     width: 1/2
