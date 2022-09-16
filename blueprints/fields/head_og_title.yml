@@ -1,0 +1,9 @@
+label:
+  de: Open Graph-Titel
+  en: Open Graph title
+
+type: text
+
+help:
+  de: Ein kurzer und präziser Titel, der beim Teilen der Seite angezeigt wird
+  en: A short and precise title to display when sharing the page

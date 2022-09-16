@@ -1,0 +1,15 @@
+label:
+  de: Open Graph-Bild
+  en: Open Graph image
+
+type: files
+
+layout: cards
+
+multiple: false
+
+query: site.images
+
+help:
+  de: Das zu teilende Bild sollte ebenfalls Neugier und Interesse wecken
+  en: Das zu teilende Bild sollte ebenfalls Neugier und Interesse wecken

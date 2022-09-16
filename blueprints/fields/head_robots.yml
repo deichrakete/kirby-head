@@ -1,0 +1,9 @@
+label:
+  de: Anweisungen für Webcrawler
+  en: Instructions for web crawlers
+
+type: toggle
+
+text:
+  de: Seite nicht indexieren?
+  en: Don't index the page?

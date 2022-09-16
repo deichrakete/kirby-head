@@ -1,0 +1,9 @@
+label:
+  de: Twitter Handle
+  en: Twitter Handle
+
+type: text
+
+placeholder:
+  de: '@nutzername'
+  en: '@username'

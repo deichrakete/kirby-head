@@ -1,0 +1,11 @@
+label:
+  de: Twitter Card
+  en: Twitter Card
+
+type: files
+
+layout: cards
+
+multiple: false
+
+query: site.images

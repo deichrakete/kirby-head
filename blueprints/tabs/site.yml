@@ -1,61 +1,36 @@
-label: Seo & Social Media
+label:
+  de: SEO & Social Media
+  en: SEO & Social Media
 
 fields:
   head_author:
-    label:
-      de: Autor
-      en: Author
-    type: text
+    extends: fields/head_author
     width: 1/2
 
   head_google_site_verification:
-    label:
-      de: Google-Bestätigungstoken
-      en: Google confirmation token
-    type: text
+    extends: fields/head_google_site_verification
     width: 1/2
 
   head_keywords:
-    label:
-      de: Stichwörter
-      en: Keywords
+    extends: fields/head_keywords
     width: 1/2
-    type: tags
 
   line1:
     type: line
 
   head_og_image:
-    label:
-      de: Open Graph-Bild
-      en: Open Graph image
-    type: files
-    layout: cards
-    multiple: false
-    query: site.images
+    extends: fields/head_og_image
     width: 1/2
 
   line2:
     type: line
 
   head_twitter_site:
-    label:
-      de: Twitter-Nutzername
-      en: Twitter username
-    type: text
-    placeholder:
-      de: '@ihr_nutzername'
-      en: '@your_username'
+    extends: fields/head_twitter_site
     width: 1/2
 
   head_twitter_image:
-    label:
-      de: Twitter Card-Bild
-      en: Twitter card image
-    type: files
-    layout: cards
-    multiple: false
-    query: site.images
+    extends: fields/head_twitter_image
     width: 1/2
 
   line3:
@@ -63,7 +38,7 @@ fields:
 
   favicon_info:
     label:
-      de: Hinweiß
-      en: Info
+      de: Hinweis
+      en: Notice
     type: info
     text: TODO

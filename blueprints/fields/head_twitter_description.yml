@@ -1,0 +1,13 @@
+label:
+  de: Twitter Card-Beschreibung
+  en: Twitter card description
+
+type: textarea
+
+buttons: false
+
+maxlength: 160
+
+help:
+  de: Eine Kurzbeschreibung des Inhalts dieser Seite nach dem AIDA Prinzip – Aufmerksamkeit, Interesse, Verlangen, Aktion
+  en: A short description of the content of this page according to the AIDA principle - attention, interest, desire, action
