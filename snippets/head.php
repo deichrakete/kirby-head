@@ -10,7 +10,7 @@ use Kirby\Filesystem\F;
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?= $page->title() ?> / <?= $site->title() ?></title>
+<title><?= $page->title() ?> – <?= $site->title() ?></title>
 
 <?php if ($site->head_author()->isNotEmpty() || $page->head_author()->isNotEmpty()) : ?>
     <meta
