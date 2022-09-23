@@ -10,6 +10,7 @@ Kirby::plugin('foerdeliebe/head', [
         'head/head_og_image' => __DIR__ . '/blueprints/fields/head_og_image.yml',
         'head/head_og_title' => __DIR__ . '/blueprints/fields/head_og_title.yml',
         'head/head_robots' => __DIR__ . '/blueprints/fields/head_robots.yml',
+        'head/head_title' => __DIR__ . '/blueprints/fields/head_title.yml',
         'head/head_twitter_description' => __DIR__ . '/blueprints/fields/head_twitter_description.yml',
         'head/head_twitter_image' => __DIR__ . '/blueprints/fields/head_twitter_image.yml',
         'head/head_twitter_site' => __DIR__ . '/blueprints/fields/head_twitter_site.yml',
