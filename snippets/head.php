@@ -98,6 +98,8 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
+<meta property="og:url" content="<?= $page->url() ?>">
+
 <meta name="twitter:card" content="summary">
 
 <?php if ($site->head_twitter_site()->isNotEmpty()): ?>
