@@ -1,7 +1,8 @@
 <?php
-
-/** @var Kirby\Cms\Page $page */
-/** @var Kirby\Cms\Site $site */
+/**
+ * @var Kirby\Cms\Page $page
+ * @var Kirby\Cms\Site $site
+ */
 
 use Kirby\Filesystem\F;
 
@@ -10,7 +11,13 @@ use Kirby\Filesystem\F;
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?= $page->title() ?> – <?= $site->title() ?></title>
+<?php if ($page->head_title()->isNotEmpty()) : ?>
+    <title><?= $page->head_title() ?></title>
+<?php elseif ($site->head_title()->isNotEmpty()) : ?>
+    <title><?= $site->head_title() ?></title>
+<?php else: ?>
+    <title><?= $page->title() ?> – <?= $site->title() ?></title>
+<?php endif ?>
 
 <?php if ($site->head_author()->isNotEmpty() || $page->head_author()->isNotEmpty()) : ?>
     <meta
@@ -51,7 +58,8 @@ use Kirby\Filesystem\F;
         ) ?>"
     >
 <?php endif ?>
-<meta property="og:title" content="<?php e($page->head_og_title()->isNotEmpty(), $page->head_og_title(), $page->title()) ?>">
+<meta property="og:title"
+      content="<?php e($page->head_og_title()->isNotEmpty(), $page->head_og_title(), $page->title()) ?>">
 <?php if ($page->head_og_image()->toFile()): ?>
     <meta property="og:image" content="<?= $page->head_og_image()->toFile()->url() ?>">
 <?php elseif ($site->head_og_image()->toFile()): ?>

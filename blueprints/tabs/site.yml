@@ -3,6 +3,9 @@ label:
   en: SEO & Social Media
 
 fields:
+  head_title:
+    extends: head/head_title
+
   head_author:
     extends: head/head_author
     width: 1/2

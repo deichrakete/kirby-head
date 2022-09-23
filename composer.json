@@ -1,21 +1,26 @@
 {
-  "name": "foerdeliebe/kirby-head",
-  "description": "",
-  "type": "kirby-plugin",
-  "license": "MIT",
-  "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
-  "version": "1.0.4",
-  "authors": [
-    {
-      "name": "Stephan Plöhn",
-      "email": "stephan@foerdliebe.com",
-      "homepage": "https://foerdeliebe.com"
+    "name": "foerdeliebe/kirby-head",
+    "description": "",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
+    "version": "1.0.5",
+    "authors": [
+        {
+            "name": "Hendrik Berends",
+            "email": "hendrik@foerdliebe.com",
+            "homepage": "https://foerdeliebe.com"
+        },
+        {
+            "name": "Stephan Plöhn",
+            "email": "stephan@foerdliebe.com",
+            "homepage": "https://foerdeliebe.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.2"
+    },
+    "extra": {
+        "installer-name": ""
     }
-  ],
-  "require": {
-    "getkirby/composer-installer": "^1.2"
-  },
-  "extra": {
-    "installer-name": ""
-  }
 }
