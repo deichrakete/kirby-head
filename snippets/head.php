@@ -161,10 +161,18 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
+<?php if (F::exists('browserconfig.xml')) : ?>
+    <meta name="msapplication-config" content="/browserconfig.xml">
+<?php endif ?>
+
 <?php if ($site->head_favicon_msapplication_tile_color()->isNotEmpty()) : ?>
     <meta name="msapplication-TileColor" content="<?= $site->head_favicon_msapplication_tilecolor() ?>>">
 <?php endif ?>
 
 <?php if ($site->head_favicon_theme_color()->isNotEmpty()) : ?>
     <meta name="theme-color" content="<?= $site->head_favicon_theme_color() ?>">
+<?php endif ?>
+
+<?php if (F::exists('favicon.ico')) : ?>
+    <link rel="shortcut icon" href="/favicon.ico">
 <?php endif ?>
