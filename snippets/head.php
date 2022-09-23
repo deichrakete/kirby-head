@@ -77,6 +77,16 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
+<?php if ($page->head_og_image()->toFile()): ?>
+    <meta property="og:image" content="<?= $page->head_og_image()->toFile()->url() ?>">
+<?php elseif ($site->head_og_image()->toFile()): ?>
+    <meta property="og:image" content="<?= $site->head_og_image()->toFile()->url() ?>">
+<?php endif ?>
+
+<?php if ($site->head_og_site_name()->isNotEmpty()) : ?>
+    <meta property="og:site_name" content="<?= $site->head_og_site_name() ?>">
+<?php endif ?>
+
 <?php if ($page->head_og_title()->isNotEmpty() || $site->head_og_title()->isNotEmpty()) : ?>
     <meta
         property="og:title"
@@ -86,12 +96,6 @@ use Kirby\Filesystem\F;
             $site->title()
         ) ?>"
     >
-<?php endif ?>
-
-<?php if ($page->head_og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $page->head_og_image()->toFile()->url() ?>">
-<?php elseif ($site->head_og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $site->head_og_image()->toFile()->url() ?>">
 <?php endif ?>
 
 <meta name="twitter:card" content="summary">

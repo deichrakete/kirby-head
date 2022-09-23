@@ -4,7 +4,7 @@
     "type": "kirby-plugin",
     "license": "MIT",
     "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "authors": [
         {
             "name": "Hendrik Berends",

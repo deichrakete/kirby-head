@@ -22,6 +22,10 @@ fields:
   line1:
     type: line
 
+  head_og_site_name:
+    extends: head/head_og_site_name
+    width: 1/2
+
   head_og_image:
     extends: head/head_og_image
     width: 1/2
