@@ -84,7 +84,7 @@ use Kirby\Filesystem\F;
     <meta property="og:image:width" content="400">
 <?php elseif ($site->head_og_image()->toFile()): ?>
     <meta property="og:image" content="<?= $site->head_og_image()->toFile()->crop(400, 300)->url() ?>">
-    <meta property="og:image:type" content="image/<?= $page->head_og_image()->toFile()->extension() ?>">
+    <meta property="og:image:type" content="image/<?= $site->head_og_image()->toFile()->extension() ?>">
     <meta property="og:image:height" content="300">
     <meta property="og:image:width" content="400">
 <?php endif ?>
