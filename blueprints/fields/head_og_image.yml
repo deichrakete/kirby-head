@@ -6,9 +6,11 @@ type: files
 
 layout: cards
 
+max: 1
+
 multiple: false
 
-query: site.images
+query: page.images
 
 help:
   de: Das zu teilende Bild sollte ebenfalls Neugier und Interesse wecken
