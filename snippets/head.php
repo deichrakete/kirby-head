@@ -78,15 +78,15 @@ use Kirby\Filesystem\F;
 <?php endif ?>
 
 <?php if ($page->head_og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $page->head_og_image()->toFile()->crop(400, 300)->url() ?>">
+    <meta property="og:image" content="<?= $page->head_og_image()->toFile()->crop(1200, 630)->url() ?>">
     <meta property="og:image:type" content="image/<?= $page->head_og_image()->toFile()->extension() ?>">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200">
 <?php elseif ($site->head_og_image()->toFile()): ?>
-    <meta property="og:image" content="<?= $site->head_og_image()->toFile()->crop(400, 300)->url() ?>">
+    <meta property="og:image" content="<?= $site->head_og_image()->toFile()->crop(1200, 630)->url() ?>">
     <meta property="og:image:type" content="image/<?= $site->head_og_image()->toFile()->extension() ?>">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200">
 <?php endif ?>
 
 <?php if ($site->head_og_site_name()->isNotEmpty()) : ?>
