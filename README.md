@@ -1,7 +1,5 @@
 # Kirby  plugin
 
-This plugin is work in progress. Don't use it!
-
 ## Installation
 
 ### Download
@@ -11,13 +9,7 @@ Download and copy this repository to `/site/plugins/`.
 ### Git submodule
 
 ```
-git submodule add https://github.com/foerdeliebe/.git site/plugins/
-```
-
-### Composer
-
-```
-composer require foerdeliebe/
+git submodule add https://github.com/foerdeliebe/kirby/head.git site/plugins/
 ```
 
 ## Setup
