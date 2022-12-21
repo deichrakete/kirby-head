@@ -98,16 +98,14 @@ use Kirby\Filesystem\F;
     <meta property="og:site_name" content="<?= $site->head_og_site_name() ?>">
 <?php endif ?>
 
-<?php if ($page->head_og_title()->isNotEmpty() || $site->head_og_title()->isNotEmpty()) : ?>
-    <meta
-        property="og:title"
-        content="<?php e(
-            $page->head_og_title()->isNotEmpty(),
-            $page->head_og_title(),
-            $site->title()
-        ) ?>"
-    >
-<?php endif ?>
+<meta
+    property="og:title"
+    content="<?php e(
+        $page->head_og_title()->isNotEmpty(),
+        $page->head_og_title(),
+        $page->title()
+    ) ?>"
+>
 
 <meta property="og:url" content="<?= $page->url() ?>">
 
@@ -117,7 +115,7 @@ use Kirby\Filesystem\F;
     <meta name="twitter:site" content="<?= $site->head_twitter_site() ?>">
 <?php endif ?>
 
-<?php if ($page->head_twitter_description()->isNotEmpty() || $site->head_head_description()->isNotEmpty()) : ?>
+<?php if ($page->head_twitter_description()->isNotEmpty() || $site->head_description()->isNotEmpty()) : ?>
     <meta
         name="twitter:description"
         content="<?php e(
@@ -128,21 +126,19 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
-<?php if ($page->head_twitter_title()->isNotEmpty() || $site->head_twitter_title()->isNotEmpty()) : ?>
-    <meta
-        name="twitter:title"
-        content="<?php e(
-            $page->head_twitter_title()->isNotEmpty(),
-            $page->head_twitter_title(),
-            $site->title()
-        ) ?>"
-    >
-<?php endif ?>
+<meta
+    name="twitter:title"
+    content="<?php e(
+        $page->head_twitter_title()->isNotEmpty(),
+        $page->head_twitter_title(),
+        $page->title()
+    ) ?>"
+>
 
 <?php if ($page->head_twitter_image()->toFile()): ?>
-    <meta property="twitter:image" content="<?= $page->head_twitter_image()->toFile()->url() ?>">
+    <meta property="twitter:image" content="<?= $page->head_twitter_image()->toFile()->crop(1200, 630)->url() ?>">
 <?php elseif ($site->head_twitter_image()->toFile()): ?>
-    <meta property="twitter:image" content="<?= $site->head_twitter_image()->toFile()->url() ?>">
+    <meta property="twitter:image" content="<?= $site->head_twitter_image()->toFile()->crop(1200, 630)->url() ?>">
 <?php endif ?>
 
 <?php if (F::exists('apple-touch-icon.png')) : ?>
