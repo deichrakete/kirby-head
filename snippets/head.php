@@ -11,6 +11,11 @@ use Kirby\Filesystem\F;
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<?php foreach ($kirby->languages() as $language): ?>
+    <?php if ($kirby->language() == $language) continue; ?>
+    <link rel="alternate" href="<?= $page->url($language->code()) ?>" hreflang="<?= $language->code() ?>" />
+<?php endforeach; ?>
+
 <?php if ($page->head_title()->isNotEmpty() || $site->head_title()->isNotEmpty()) : ?>
     <title>
         <?php e(
