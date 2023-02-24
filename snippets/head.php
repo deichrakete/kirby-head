@@ -183,3 +183,9 @@ use Kirby\Filesystem\F;
 <?php if (F::exists('favicon.ico')) : ?>
     <link rel="shortcut icon" href="/favicon.ico">
 <?php endif ?>
+
+<?php if ($page->head_canonical()->isNotEmpty()) : ?>
+    <link rel="canonical" href="<?= $page->head_canonical() ?>" />
+<?php else: ?>
+    <link rel="canonical" href="<?= $page->url() ?>" />
+<?php endif ?>
