@@ -6,7 +6,7 @@ type: textarea
 
 buttons: false
 
-maxlength: 300
+maxlength: 160
 
 help:
   de: Eine Kurzbeschreibung des Inhalts dieser Seite nach dem AIDA Prinzip – Aufmerksamkeit, Interesse, Verlangen, Aktion. Die Länge sollte nicht über 160 Zeichen hinausgehen.
