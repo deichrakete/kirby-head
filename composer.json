@@ -4,7 +4,7 @@
     "type": "kirby-plugin",
     "license": "MIT",
     "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
-    "version": "1.3.0",
+    "version": "1.4.1",
     "authors": [
         {
             "name": "Hendrik Berends",
@@ -14,6 +14,11 @@
         {
             "name": "Stephan Plöhn",
             "email": "stephan@foerdliebe.com",
+            "homepage": "https://foerdeliebe.com"
+        },
+        {
+            "name": "Diana Gerken",
+            "email": "diana@foerdliebe.com",
             "homepage": "https://foerdeliebe.com"
         }
     ],
