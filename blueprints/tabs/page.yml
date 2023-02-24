@@ -52,3 +52,9 @@ fields:
   head_twitter_image:
     extends: head/head_twitter_image
     width: 1/2
+
+  line3:
+    type: line
+
+  head_canonical:
+    extends: head/head_canonical

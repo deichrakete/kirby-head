@@ -1,0 +1,8 @@
+label:
+  de: Kanonische Url
+  en: Canonical Url
+type: url
+help:
+  de: Eine kanonische URL ist die originale URL der Seite (die Aussagekräftigste von Seiten mit gleichen Inhalt)
+  en: A canonical url ist the original or most meaningful site of sites with identical content
+

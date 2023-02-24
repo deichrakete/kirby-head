@@ -3,6 +3,7 @@
 Kirby::plugin('foerdeliebe/head', [
     'blueprints' => [
         'head/head_author' => __DIR__ . '/blueprints/fields/head_author.yml',
+        'head/head_canonical' => __DIR__ . '/blueprints/fields/head_canonical.yml',
         'head/head_description' => __DIR__ . '/blueprints/fields/head_description.yml',
         'head/head_google_site_verification' => __DIR__ . '/blueprints/fields/head_google_site_verification.yml',
         'head/head_keywords' => __DIR__ . '/blueprints/fields/head_keywords.yml',
