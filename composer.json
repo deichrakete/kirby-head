@@ -1,6 +1,6 @@
 {
     "name": "foerdeliebe/kirby-head",
-    "description": "",
+    "description": "An all in one snippet & blueprint to handle your </head>",
     "type": "kirby-plugin",
     "license": "MIT",
     "homepage": "https://github.com/foerdeliebe/kirby-head",
