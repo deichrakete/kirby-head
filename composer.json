@@ -3,8 +3,8 @@
     "description": "",
     "type": "kirby-plugin",
     "license": "MIT",
-    "homepage": "https://gitlab.com/foerdeliebe/kirby/head",
-    "version": "1.4.1",
+    "homepage": "https://github.com/foerdeliebe/kirby-head",
+    "version": "1.4.2",
     "authors": [
         {
             "name": "Hendrik Berends",

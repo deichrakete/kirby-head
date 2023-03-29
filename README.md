@@ -9,7 +9,13 @@ Download and copy this repository to `/site/plugins/`.
 ### Git submodule
 
 ```
-git submodule add https://gitlab.com/foerdeliebe/kirby/head.git site/plugins/head
+git submodule add https://github.com/foerdeliebe/kirby-head.git site/plugins/head
+```
+
+### Composer
+
+```
+composer require foerdeliebe/kirby-head
 ```
 
 ## Setup
