@@ -8,4 +8,4 @@ layout: cards
 
 multiple: false
 
-query: site.images
+query: page.images
