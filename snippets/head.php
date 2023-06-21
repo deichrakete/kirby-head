@@ -65,7 +65,7 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
-<?php if ($page->head_robots()->toBool() === true || $site->head_robots()->toBool() === true): ?>
+<?php if ($page->head_robots()->toBool() === true): ?>
     <meta name="robots" content="nofollow, noindex">
 <?php else: ?>
     <meta name="robots" content="follow, index">
