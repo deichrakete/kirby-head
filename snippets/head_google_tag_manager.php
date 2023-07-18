@@ -1,4 +1,4 @@
-<?php if ($site->head_google_tag_manager()->isNotEmpty()) :
+<?php if ($site->head_google_tag_manager()->isNotEmpty() && $site->head_google_tag_toggle()->toBool() === false) : ?>
     /*
     USAGE: Put the following code directly after the opening BODY tag of your website
     <?php snippet('head_google_tag_manager/render', slots: true) ?><?php endsnippet() ?>
