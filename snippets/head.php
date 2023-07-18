@@ -13,7 +13,7 @@ use Kirby\Filesystem\F;
 
 <?php foreach ($kirby->languages() as $language): ?>
     <?php if ($kirby->language() == $language) continue; ?>
-    <link rel="alternate" href="<?= $page->url($language->code()) ?>" hreflang="<?= $language->code() ?>" />
+    <link rel="alternate" href="<?= $page->url($language->code()) ?>" hreflang="<?= $language->code() ?>"/>
 <?php endforeach; ?>
 
 <?php if ($page->head_title()->isNotEmpty() || $site->head_title()->isNotEmpty()) : ?>
@@ -26,6 +26,24 @@ use Kirby\Filesystem\F;
     </title>
 <?php else: ?>
     <title><?= $page->title() ?> – <?= $site->title() ?></title>
+<?php endif ?>
+
+<?php if ($site->head_google_tag_manager()->isNotEmpty()) : ?>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '<?= Str::esc($site->head_google_tag_manager()) ?>');
+    </script>
 <?php endif ?>
 
 <?php if ($page->head_author()->isNotEmpty() || $site->head_author()->isNotEmpty()) : ?>
@@ -185,7 +203,7 @@ use Kirby\Filesystem\F;
 <?php endif ?>
 
 <?php if ($page->head_canonical()->isNotEmpty()) : ?>
-    <link rel="canonical" href="<?= $page->head_canonical() ?>" />
+    <link rel="canonical" href="<?= $page->head_canonical() ?>"/>
 <?php else: ?>
-    <link rel="canonical" href="<?= $page->url() ?>" />
+    <link rel="canonical" href="<?= $page->url() ?>"/>
 <?php endif ?>

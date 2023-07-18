@@ -5,21 +5,24 @@ label:
 fields:
   head_title:
     extends: head/head_title
-    width: 1/2
 
   head_author:
     extends: head/head_author
     width: 1/2
 
-  head_description:
-    extends: head/head_description
-
   head_keywords:
     extends: head/head_keywords
     width: 1/2
 
+  head_description:
+    extends: head/head_description
+
   head_google_site_verification:
     extends: head/head_google_site_verification
+    width: 1/2
+
+  head_google_tag_manager:
+    extends: head/head_google_tag_manager
     width: 1/2
 
   line1:

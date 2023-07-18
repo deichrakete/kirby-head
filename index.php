@@ -6,6 +6,7 @@ Kirby::plugin('foerdeliebe/head', [
         'head/head_canonical' => __DIR__ . '/blueprints/fields/head_canonical.yml',
         'head/head_description' => __DIR__ . '/blueprints/fields/head_description.yml',
         'head/head_google_site_verification' => __DIR__ . '/blueprints/fields/head_google_site_verification.yml',
+        'head/head_google_tag_manager' => __DIR__ . '/blueprints/fields/head_google_tag_manager.yml',
         'head/head_keywords' => __DIR__ . '/blueprints/fields/head_keywords.yml',
         'head/head_og_description' => __DIR__ . '/blueprints/fields/head_og_description.yml',
         'head/head_og_image' => __DIR__ . '/blueprints/fields/head_og_image.yml',
@@ -21,6 +22,7 @@ Kirby::plugin('foerdeliebe/head', [
         'head/page' => __DIR__ . '/blueprints/tabs/page.yml',
     ],
     'snippets' => [
+        'head_google_tag_manager/render' => __DIR__ . '/snippets/head_google_tag_manager.php',
         'head/render' => __DIR__ . '/snippets/head.php',
     ]
 ]);
