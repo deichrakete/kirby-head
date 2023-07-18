@@ -19,11 +19,23 @@ fields:
 
   head_google_site_verification:
     extends: head/head_google_site_verification
-    width: 1/2
+    width: 1/3
+
+  head_google_tag_toggle:
+    extends: head/head_google_tag_toggle
+    width: 1/3
+
+  head_google_tag:
+    extends: head/head_google_tag
+    width: 1/3
+    when:
+      head_google_tag_toggle: true
 
   head_google_tag_manager:
     extends: head/head_google_tag_manager
-    width: 1/2
+    width: 1/3
+    when:
+      head_google_tag_toggle: false
 
   line1:
     type: line

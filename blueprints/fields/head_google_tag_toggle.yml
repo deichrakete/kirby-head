@@ -1,0 +1,9 @@
+label:
+  de: Auswahl
+  en: Selection
+
+type: toggle
+
+text:
+  - "Google Tag Manager"
+  - "Google Tag"

@@ -28,7 +28,7 @@ use Kirby\Filesystem\F;
     <title><?= $page->title() ?> – <?= $site->title() ?></title>
 <?php endif ?>
 
-<?php if ($site->head_google_tag_manager()->isNotEmpty()) : ?>
+<?php if ($site->head_google_tag_manager()->isNotEmpty() && $site->head_google_tag_toggle()->toBool() === false) : ?>
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -43,6 +43,20 @@ use Kirby\Filesystem\F;
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', '<?= Str::esc($site->head_google_tag_manager()) ?>');
+    </script>
+<?php endif ?>
+
+<?php if ($site->head_google_tag()->isNotEmpty() && $site->head_google_tag_toggle()->toBool() === true) : ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?= Str::esc($site->head_google_tag()) ?>"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', '<?= Str::esc($site->head_google_tag()) ?>');
     </script>
 <?php endif ?>
 
