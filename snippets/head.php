@@ -65,7 +65,7 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
-<?php if ($page->head_robots()->toBool() === true): ?>
+<?php if ($page->head_robots()->toBool() || option('foerdeliebe.head.staging')): ?>
     <meta name="robots" content="nofollow, noindex">
 <?php else: ?>
     <meta name="robots" content="follow, index">

@@ -1,5 +1,7 @@
 <?php
 
+use Kirby\Cms\Response;
+
 Kirby::plugin('foerdeliebe/head', [
     'blueprints' => [
         'head/head_author' => __DIR__ . '/blueprints/fields/head_author.yml',
@@ -20,7 +22,11 @@ Kirby::plugin('foerdeliebe/head', [
         'head/site' => __DIR__ . '/blueprints/tabs/site.yml',
         'head/page' => __DIR__ . '/blueprints/tabs/page.yml',
     ],
+    'options' => [
+        'staging' => false,
+    ],
     'snippets' => [
         'head/render' => __DIR__ . '/snippets/head.php',
-    ]
+    ],
+
 ]);
