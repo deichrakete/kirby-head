@@ -4,7 +4,7 @@
     "type": "kirby-plugin",
     "license": "MIT",
     "homepage": "https://github.com/foerdeliebe/kirby-head",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "authors": [
         {
             "name": "Hendrik Berends",
