@@ -7,5 +7,5 @@ type: textarea
 buttons: false
 
 help:
-  de: Eine Kurzbeschreibung des Inhalts dieser Seite nach dem AIDA Prinzip – Aufmerksamkeit, Interesse, Verlangen, Aktion. Die Länge sollte nicht über 160 Zeichen hinausgehen.
+  de: Eine Kurzbeschreibung des Inhalts dieser Seite nach dem AIDA Prinzip - Aufmerksamkeit, Interesse, Verlangen, Aktion. Die Länge sollte nicht über 160 Zeichen hinausgehen.
   en: A short description of the content of this page according to the AIDA principle - attention, interest, desire, action. The length should not exceed 160 characters.

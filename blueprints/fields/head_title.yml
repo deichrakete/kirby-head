@@ -2,6 +2,8 @@ label:
   de: Benutzerdefinierter Titel
   en: Custom title
 
-maxlength: 60
-
 type: text
+
+help:
+  de: Ein kurzer und präziser Titel. Die Länge sollte nicht über 60 Zeichen hinausgehen.
+  en: A short and precise title. Should not exceed 60 characters.

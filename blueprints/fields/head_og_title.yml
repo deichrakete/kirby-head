@@ -4,8 +4,6 @@ label:
 
 type: text
 
-maxlength: 60
-
 help:
-  de: Ein kurzer und präziser Titel, der beim Teilen der Seite angezeigt wird
-  en: A short and precise title to display when sharing the page
+  de: Ein kurzer und präziser Titel, der beim Teilen der Seite angezeigt wird. Die Länge sollte nicht über 60 Zeichen hinausgehen.
+  en: A short and precise title to display when sharing the page. Should not exceed 60 characters.

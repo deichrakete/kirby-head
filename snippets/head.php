@@ -25,7 +25,7 @@ use Kirby\Filesystem\F;
         ) ?>
     </title>
 <?php else: ?>
-    <title><?= $page->title() ?> – <?= $site->title() ?></title>
+    <title><?= $page->title() ?> - <?= $site->title() ?></title>
 <?php endif ?>
 
 <?php if ($page->head_author()->isNotEmpty() || $site->head_author()->isNotEmpty()) : ?>
@@ -66,9 +66,9 @@ use Kirby\Filesystem\F;
 <?php endif ?>
 
 <?php if ($page->head_robots()->toBool() || option('foerdeliebe.head.staging')): ?>
-    <meta name="robots" content="nofollow, noindex">
+    <meta name="robots" content="noindex">
 <?php else: ?>
-    <meta name="robots" content="follow, index">
+    <meta name="robots" content="index">
 <?php endif ?>
 
 <?php if ($page->head_og_description()->isNotEmpty() || $site->head_og_description()->isNotEmpty()) : ?>

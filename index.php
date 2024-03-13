@@ -1,6 +1,5 @@
 <?php
-
-use Kirby\Cms\Response;
+use Kirby\Cms\App as Kirby;
 
 Kirby::plugin('foerdeliebe/head', [
     'blueprints' => [
