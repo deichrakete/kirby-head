@@ -25,7 +25,7 @@ use Kirby\Filesystem\F;
         ) ?>
     </title>
 <?php else: ?>
-    <title><?= $page->title() ?> – <?= $site->title() ?></title>
+    <title><?= $page->title() ?> - <?= $site->title() ?></title>
 <?php endif ?>
 
 <?php if ($page->head_author()->isNotEmpty() || $site->head_author()->isNotEmpty()) : ?>
