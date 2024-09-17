@@ -1,8 +1,8 @@
 <?php
 
-use Kirby\Cms\Response;
+use Kirby\Cms\App as Kirby;
 
-Kirby::plugin('foerdeliebe/head', [
+Kirby::plugin('deichrakete/head', [
     'blueprints' => [
         'head/head_author' => __DIR__ . '/blueprints/fields/head_author.yml',
         'head/head_canonical' => __DIR__ . '/blueprints/fields/head_canonical.yml',

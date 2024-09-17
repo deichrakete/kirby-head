@@ -65,10 +65,10 @@ use Kirby\Filesystem\F;
     >
 <?php endif ?>
 
-<?php if ($page->head_robots()->toBool() || option('foerdeliebe.head.staging')): ?>
-    <meta name="robots" content="nofollow, noindex">
+<?php if ($page->head_robots()->toBool() || option('deichrakete.head.staging')): ?>
+    <meta name="robots" content="noindex">
 <?php else: ?>
-    <meta name="robots" content="follow, index">
+    <meta name="robots" content="index">
 <?php endif ?>
 
 <?php if ($page->head_og_description()->isNotEmpty() || $site->head_og_description()->isNotEmpty()) : ?>

@@ -9,13 +9,13 @@ Download and copy this repository to `/site/plugins/`.
 ### Git submodule
 
 ```
-git submodule add https://github.com/foerdeliebe/kirby-head.git site/plugins/head
+git submodule add https://github.com/deichrakete/kirby-head.git site/plugins/head
 ```
 
 ### Composer
 
 ```
-composer require foerdeliebe/kirby-head
+composer require deichrakete/kirby-head
 ```
 
 ## Setup
@@ -36,4 +36,4 @@ MIT
 
 ## Credits
 
-- [](https://getkirby.com/plugins/foerdeliebe)
+- [](https://getkirby.com/plugins/deichrakete)

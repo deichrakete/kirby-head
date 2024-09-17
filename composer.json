@@ -1,25 +1,25 @@
 {
-    "name": "foerdeliebe/kirby-head",
+    "name": "deichrakete/kirby-head",
     "description": "An all in one snippet & blueprint to handle your </head>",
     "type": "kirby-plugin",
     "license": "MIT",
-    "homepage": "https://github.com/foerdeliebe/kirby-head",
-    "version": "1.5.1",
+    "homepage": "https://github.com/deichrakete/kirby-head",
+    "version": "2.0.0",
     "authors": [
         {
             "name": "Hendrik Berends",
-            "email": "hendrik@foerdliebe.com",
+            "email": "hendrik@foerdeliebe.com",
             "homepage": "https://foerdeliebe.com"
         },
         {
             "name": "Stephan Plöhn",
-            "email": "stephan@foerdliebe.com",
-            "homepage": "https://foerdeliebe.com"
+            "email": "ploehn@deichrakete.com",
+            "homepage": "https://deichrakete.com"
         },
         {
             "name": "Diana Gerken",
-            "email": "diana@foerdliebe.com",
-            "homepage": "https://foerdeliebe.com"
+            "email": "ploehn@deichrakete.com",
+            "homepage": "https://deichrakete.com"
         }
     ],
     "require": {
