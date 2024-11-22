@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @var Kirby\Cms\Page $page
  * @var Kirby\Cms\Site $site
@@ -32,22 +33,20 @@ use Kirby\Filesystem\F;
     <meta
         name="author"
         content="<?php e(
-            $page->head_author()->isNotEmpty(),
-            $page->head_author(),
-            $site->head_author()
-        ) ?>"
-    >
+                        $page->head_author()->isNotEmpty(),
+                        $page->head_author(),
+                        $site->head_author()
+                    ) ?>">
 <?php endif ?>
 
 <?php if ($page->head_description()->isNotEmpty() || $site->head_description()->isNotEmpty()) : ?>
     <meta
         name="description"
         content="<?php e(
-            $page->head_description()->isNotEmpty(),
-            $page->head_description(),
-            $site->head_description()
-        ) ?>"
-    >
+                        $page->head_description()->isNotEmpty(),
+                        $page->head_description(),
+                        $site->head_description()
+                    ) ?>">
 <?php endif ?>
 
 <?php if ($site->head_google_site_verification()->isNotEmpty()): ?>
@@ -58,11 +57,10 @@ use Kirby\Filesystem\F;
     <meta
         name="keywords"
         content="<?php e(
-            $page->head_keywords()->isNotEmpty(),
-            $page->head_keywords(),
-            $site->head_keywords()
-        ) ?>"
-    >
+                        $page->head_keywords()->isNotEmpty(),
+                        $page->head_keywords(),
+                        $site->head_keywords()
+                    ) ?>">
 <?php endif ?>
 
 <?php if ($page->head_robots()->toBool() || option('deichrakete.head.staging')): ?>
@@ -75,11 +73,10 @@ use Kirby\Filesystem\F;
     <meta
         property="og:description"
         content="<?php e(
-            $page->head_og_description()->isNotEmpty(),
-            $page->head_og_description(),
-            $site->head_description()
-        ) ?>"
-    >
+                        $page->head_og_description()->isNotEmpty(),
+                        $page->head_og_description(),
+                        $site->head_description()
+                    ) ?>">
 <?php endif ?>
 
 <?php if ($page->head_og_image()->toFile()): ?>
@@ -101,11 +98,10 @@ use Kirby\Filesystem\F;
 <meta
     property="og:title"
     content="<?php e(
-        $page->head_og_title()->isNotEmpty(),
-        $page->head_og_title(),
-        $page->title()
-    ) ?>"
->
+                    $page->head_og_title()->isNotEmpty(),
+                    $page->head_og_title(),
+                    $page->title()
+                ) ?>">
 
 <meta property="og:url" content="<?= $page->url() ?>">
 
@@ -119,21 +115,19 @@ use Kirby\Filesystem\F;
     <meta
         name="twitter:description"
         content="<?php e(
-            $page->head_twitter_description()->isNotEmpty(),
-            $page->head_twitter_description(),
-            $site->head_description()
-        ) ?>"
-    >
+                        $page->head_twitter_description()->isNotEmpty(),
+                        $page->head_twitter_description(),
+                        $site->head_description()
+                    ) ?>">
 <?php endif ?>
 
 <meta
     name="twitter:title"
     content="<?php e(
-        $page->head_twitter_title()->isNotEmpty(),
-        $page->head_twitter_title(),
-        $page->title()
-    ) ?>"
->
+                    $page->head_twitter_title()->isNotEmpty(),
+                    $page->head_twitter_title(),
+                    $page->title()
+                ) ?>">
 
 <?php if ($page->head_twitter_image()->toFile()): ?>
     <meta property="twitter:image" content="<?= $page->head_twitter_image()->toFile()->crop(1200, 630)->url() ?>">
@@ -141,47 +135,24 @@ use Kirby\Filesystem\F;
     <meta property="twitter:image" content="<?= $site->head_twitter_image()->toFile()->crop(1200, 630)->url() ?>">
 <?php endif ?>
 
-<?php if (F::exists('apple-touch-icon.png')) : ?>
+<?php if (F::exists('favicon-96x96.png') || F::exists('public/favicon-96x96.png')) : ?>
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<?php endif ?>
+
+<?php if (F::exists('favicon.svg') || F::exists('public/favicon.svg')) : ?>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<?php endif ?>
+
+<?php if (F::exists('favicon.ico') || F::exists('public/favicon.ico')) : ?>
+    <link rel="shortcut icon" href="/favicon.ico">
+<?php endif ?>
+
+<?php if (F::exists('apple-touch-icon.png') || F::exists('public/apple-touch-icon.png')) : ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <?php endif ?>
 
-<?php if (F::exists('favicon-32x32.png')) : ?>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<?php endif ?>
-
-<?php if (F::exists('favicon-16x16.png')) : ?>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<?php endif ?>
-
-<?php if (F::exists('site.webmanifest')) : ?>
+<?php if (F::exists('site.webmanifest') || F::exists('public/site.webmanifest')) : ?>
     <link rel="manifest" href="/site.webmanifest">
-<?php endif ?>
-
-<?php if (F::exists('safari-pinned-tab.svg')) : ?>
-    <link
-        rel="mask-icon"
-        href="/safari-pinned-tab.svg"
-        color="<?php e(
-            $site->favicon_mask_icon_color()->isNotEmpty(),
-            $site->favicon_mask_icon_color(),
-            '#fff') ?>"
-    >
-<?php endif ?>
-
-<?php if (F::exists('browserconfig.xml')) : ?>
-    <meta name="msapplication-config" content="/browserconfig.xml">
-<?php endif ?>
-
-<?php if ($site->head_favicon_msapplication_tile_color()->isNotEmpty()) : ?>
-    <meta name="msapplication-TileColor" content="<?= $site->head_favicon_msapplication_tilecolor() ?>>">
-<?php endif ?>
-
-<?php if ($site->head_favicon_theme_color()->isNotEmpty()) : ?>
-    <meta name="theme-color" content="<?= $site->head_favicon_theme_color() ?>">
-<?php endif ?>
-
-<?php if (F::exists('favicon.ico')) : ?>
-    <link rel="shortcut icon" href="/favicon.ico">
 <?php endif ?>
 
 <?php if ($page->head_canonical()->isNotEmpty()) : ?>
